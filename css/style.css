@@ -1,0 +1,76 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+body {
+   height:100vh;
+}
+
+
+.modal__wrapper {
+   height:100vh;
+   background:url('../images/Premium\ Photo\ _\ Hacker\ in\ a\ jacket\ with\ a\ hood\ with\ a\ laptop\ sits\ at\ the\ table.jpg');
+   background-repeat:no-repeat;
+   background-size: cover;
+   background-position: center;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+}
+.btn {
+   border:none;
+   font-weight:600;
+
+}
+.btn-open {
+   padding:20px 40px;
+   background:rgba(255, 255, 255, 0.562);
+   border:none;
+   border-radius:8px;
+   transition:0.3s;
+}
+
+.btn-open:hover{
+   background:rgba(255, 255, 255, 0.719)
+}
+.modal {
+   max-width:600px;
+   width:100%;
+   border-radius:8px;
+   background:rgba(255, 255, 255, 0.699);
+   padding:20px 10px;
+   z-index:100;
+   
+}
+.modal__header {
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom:20px;
+}
+
+.close-btn {
+   background:rgba(255, 0, 0, 0.603);
+   padding:3px;
+   transition:0.3s;
+}
+
+.close-btn:hover{
+   background:rgba(255, 0, 0, 0.747);
+}
+
+.overlay {
+   position:fixed;
+   top:0;
+   left:0;
+   bottom:0;
+   width:100%;
+   background-color: rgba(0,0,0,0.5);
+   backdrop-filter: blur(5px);
+}
+
+.hidden {
+   display:none;
+}
